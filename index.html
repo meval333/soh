@@ -5,14 +5,17 @@
 	  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css"/>
 	</head>
 	<body style="padding: 20px 40px;">
-	  <h1>Pizza Price List</h1>
+	  <h1>Product List Meval</h1>
 		<table id="example" class="display" style="width:100%">
 			<thead>
 				<tr>
+					<th>NO</th>
 					<th>SKU Code</th>
 					<th>Short Code</th>
+					<th>Barcodes</th>
 					<th>Description</th>
-					<th>CBM</th>
+					<th> Qty per CTN </th>
+					<th> CBM </th>
 					<!-- Add more columns as needed based on your JSON structure-->
 				</tr>
 			</thead>
@@ -21,12 +24,16 @@
 		<script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 	<script>
 		new DataTable('#example', {
-			ajax: 'https://script.google.com/macros/s/AKfycbxZINlaiG0KOe4_4c1UGfcDHeklOaxqk5SSspT0Qz5OCozgFrLKgSkMr6CT7g_WcEFY/exec',
+			ajax: 'https://script.google.com/macros/s/AKfycbzoZgn0DgGzxp2OgAW7pibiR3A3KrQSigdkvFVQHluGurSU6WnGqw6PLhV3vGqcTZpA/exec',
 			columns: [
+				{ data: 'NO' },
 				{ data: 'SKU Code' },
 				{ data: 'Short Code' },
+				{ data: 'Barcodes' },
 				{ data: 'Description' },
-				{ data: 'CBM ' }
+				{ data: 'Qty per CTN' },
+
+				{ data: 'CBM' }
 			]
 		});
 	</script>
