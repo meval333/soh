@@ -1,41 +1,17 @@
 <!DOCTYPE html>
-<html>
-	<head>
-	  <title>Price List</title>
-	  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css"/>
-	</head>
-	<body style="padding: 20px 40px;">
-	  <h1>Product List Meval</h1>
-		<table id="example" class="display" style="width:100%">
-			<thead>
-				<tr>
-					<th>NO</th>
-					<th>SKU Code</th>
-					<th>Short Code</th>
-					<th>Barcodes</th>
-					<th>Description</th>
-					<th> Qty per CTN </th>
-					<th> CBM </th>
-					<!-- Add more columns as needed based on your JSON structure-->
-				</tr>
-			</thead>
-		</table>
-		<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-		<script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
-	<script>
-		new DataTable('#example', {
-			ajax: 'https://script.google.com/macros/s/AKfycbzoZgn0DgGzxp2OgAW7pibiR3A3KrQSigdkvFVQHluGurSU6WnGqw6PLhV3vGqcTZpA/exec',
-			columns: [
-				{ data: 'NO' },
-				{ data: 'SKU Code' },
-				{ data: 'Short Code' },
-				{ data: 'Barcodes' },
-				{ data: 'Description' },
-				{ data: 'Qty per CTN' },
-
-				{ data: 'CBM' }
-			]
-		});
-	</script>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SOH</title>
+   <link rel="icon" type="image/x-icon" href="https://getbootstrap.com/docs/4.1/assets/img/bootstrap-stack.png">
+</head>
+<body>
+   <iframe 
+      allow ="geolocation" 
+      src   ="https://script.google.com/macros/s/AKfycbzgpe_06p6oV4mhIjv07IfKQLnsSfae4l4FGBfI_jYWRYd0DA_oSifTuqfsvlN1WCi0rg/exec" 
+      style ="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;"
+   >Your browser doesn't support iframes
+  </iframe>
 </body>
-</html>
